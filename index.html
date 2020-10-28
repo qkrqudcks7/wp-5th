@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Side Menu 구현</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <button id="menu-button">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </button>
+    <h3>My Home Page</h3>
+  </header>
+
+  <nav id="side-menu" class="hidden">
+    <ul>
+      <li><a href="#">Menu 1</a></li>
+      <li><a href="#">Menu 2</a></li>
+      <li><a href="#">Menu 3</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="container">
+        <div class="big1">
+            <img src="https://cdn.pixabay.com/photo/2020/10/09/06/09/rabbit-5639615_960_720.jpg" width="999" height="500">
+        </div>
+
+        <div class="big2">
+            <h3>Section 1</h3><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Placeat at facilis error quidem enim eligendi nam eaque, maxime vitae voluptatem pariatur voluptate exercitationem laboriosam dolores ex mollitia harum fugit magnam reiciendis iure, adipisci architecto modi ipsa aliquam.Odit, dicta consequatur distinctio possimus praesentium at reprehenderit illum repellendus perspiciatis ab quidem!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.Placeat at facilis error quidem enim eligendi nam eaque, maxime vitae voluptatem pariatur voluptate exercitationem laboriosam dolores ex mollitia harum fugit magnam reiciendis iure, adipisci architecto modi ipsa aliquam.Odit, dicta consequatur distinctio possimus praesentium at reprehenderit illum repellendus perspiciatis ab quidem!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.Placeat at facilis error quidem enim eligendi nam eaque, maxime vitae voluptatem pariatur voluptate exercitationem laboriosam dolores ex mollitia harum fugit magnam reiciendis iure, adipisci architecto modi ipsa aliquam.Odit, dicta consequatur distinctio possimus praesentium at reprehenderit illum repellendus perspiciatis ab quidem!
+        </p>
+        </div>
+
+        <div style="margin: 20px;">
+            <h3>Section 2</h3><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat at facilis error quidem enim eligendi nam eaque maxime vitae voluptatem pariatur voluptate exercitationem
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat at facilis error quidem enim eligendi nam eaque maxime vitae voluptatem pariatur voluptate exercitationem
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat at facilis error quidem enim eligendi nam eaque maxime vitae voluptatem pariatur voluptate exercitationem
+            </p>
+        </div>
+
+        <div style="margin: 20px; height: 250px;">
+            <img src="https://media.istockphoto.com/photos/cute-happy-dog-playing-with-a-stick-picture-id1184184060" width="333" height="250">
+        </div>
+
+        <div class="big3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat at facilis error quidem enim eligendi nam eaque, maxime
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat at facilis error quidem enim eligendi nam eaque, maxime
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat at facilis error quidem enim eligendi nam eaque, maxime
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat at facilis error quidem enim eligendi nam eaque, maxime
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat at facilis error quidem enim eligendi nam eaque, maxime
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat at facilis error quidem enim eligendi nam eaque, maxime
+            </p>
+        </div>
+    </div>
+    
+  </main>
+
+  <script>
+    let hidden = true;
+    const menuButton = document.getElementById('menu-button');
+    const sideMenu = document.getElementById('side-menu');
+
+    menuButton.addEventListener('click', () => {
+      if (hidden) {
+        sideMenu.classList.remove('hidden');
+        hidden = false;
+      } else {
+        sideMenu.classList.add('hidden');
+        hidden = false;
+      }
+    });
+  </script>
+</body>
+</html>
